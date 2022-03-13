@@ -1,0 +1,185 @@
+@charset "UTF-8" ;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    color:#606060;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;    
+    background-color: #fffdf8;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+header {
+    height: 65px;
+    line-height: 55px;
+    background-color: #70ceff;
+    padding: 0 0 0 15px;
+}
+
+h1 img {
+    width: 116px;
+    height: 45px;
+}
+
+main {
+    display: block;
+    margin: 25px 15px 35px;
+}
+
+section {
+    margin: 30px 0 0;
+}
+
+.mVisual img {
+    width: 100%;
+}
+
+.pList {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.pList figure img {
+    width: 100%;
+}
+
+.pList figure {
+    text-align: center;
+}
+
+.pList figcaption {
+    font-size: 12px;
+    margin: 2px 0 0;
+}
+
+.pList li {
+    width: 48%;
+    margin: 0 4% 9px 0;
+}
+
+.pList li:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.pList li:nth-of-type(n+4) {
+    margin-bottom: 0;
+}
+.mText {
+    margin: 10px 0 0;
+}
+
+.mText p+p {
+    margin: 10px 0 0;
+}
+
+h2 {
+    font-size: 17px;
+    margin: 0 0 10px;
+    padding: 20px 0 10px 67px;
+    border-bottom: 2px solid #70ceff;
+    background: url(../images/index_bg01.png) no-repeat left 0  bottom 0/59px 47px;
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #d8f1ff;
+}
+
+footer .copyRight {
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* PC */
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    header {
+        padding: 0;
+        height: 100px;
+        line-height: 85px;
+    }
+
+    header img {
+        width: 180px;
+        height: 70px;
+    }    
+
+    h1 {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 800px;
+        margin: 35px auto 90px;
+    }
+
+    section {
+        margin: 60px 0 0;
+    }
+
+    .mText {
+        margin: 20px 15px 0;
+    }    
+
+    .mText p+p {
+        margin: 15px 0 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0 0 30px;
+        padding: 13px 0 3px 52px;
+        background-size:  41px 33px;
+    }
+
+    .pList li {
+        width: 250px;
+        margin: 0 25px 20px 0;
+    }
+
+
+    .pList li:nth-of-type(even) {
+        margin-right: 25px;
+    }
+
+    .pList li:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .pList figcaption {
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+
+    footer {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    footer .copyRight {
+        text-align: left;
+        font-size: 12px;
+        width: 800px;
+        margin: 0 auto;
+    }
+}
